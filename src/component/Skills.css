@@ -1,0 +1,8 @@
+.skills {
+    padding: 30px 20px 20px;
+    margin-bottom: 60px;
+    overflow: auto;
+}
+.skills > h1 {
+    font-size: 3rem;
+}

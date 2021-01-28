@@ -1,0 +1,48 @@
+.bottomNav {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active {
+    background-color: rgb(233, 232, 232);
+    border-bottom: 5px solid blue;
+}
+.bottomNav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.icons {
+    text-decoration: none;
+    color: blue !important;
+}
+@media only screen and (min-width : 768px) {
+    .bottomNav {
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 15%;
+    }
+    .icons {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .bottomNav > a {
+        padding: 0px 15px;
+        width: 100%;
+    }
+    .active {
+        background-color: rgb(233, 232, 232);
+        border: none;
+    }
+}

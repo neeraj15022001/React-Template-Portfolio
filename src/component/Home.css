@@ -1,0 +1,29 @@
+.home {
+    padding: 20px;
+    margin-bottom: 60px;
+    overflow: auto;
+}
+.education {
+    margin-top: 30px;
+}
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+.education__paper {
+    background-color: rgba(255, 255, 255, 0.616) !important;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.education__paper > img {
+    height: 80px;
+}
+.education__paper > h6 {
+    margin-top: 10px;
+}
+.projects {
+    margin-top: 50px;
+}

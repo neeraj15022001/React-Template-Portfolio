@@ -24,3 +24,9 @@
     justify-content: space-between;
     border-radius: 10px;
 }
+@media only screen and (min-width : 768px) {
+    .settings {
+        padding: 30px;
+        margin: 0 0 0 120px;
+    }
+}

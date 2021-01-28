@@ -10,13 +10,19 @@
     display: flex;
     justify-content: space-evenly;
 }
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .education__paper {
-    background-color: rgba(255, 255, 255, 0.616) !important;
-    padding: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 45%;
 }
 .education__paper > img {
     height: 80px;
@@ -26,4 +32,18 @@
 }
 .projects {
     margin-top: 50px;
+}
+@media only screen and (min-width : 768px) { 
+    .home {
+        margin : 0 0 0 120px;
+        padding: 30px;
+    }
+    .education__paper {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .education__paper > h6 {
+        font-size: medium;
+    }
 }

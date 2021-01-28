@@ -4,7 +4,7 @@ import Avatar from "@material-ui/core/Avatar";
 import {Context} from "./ContextAPI";
 
 function Info() {
-    const [toggle, toggler] = useContext(Context)
+    const [toggle] = useContext(Context)
     return (
         <div className="info" style={{backgroundColor : toggle ? "black" : "white",color : toggle ? "white" : "black"}}>
             <div className="name">

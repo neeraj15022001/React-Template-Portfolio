@@ -7,7 +7,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import {NavLink} from 'react-router-dom';
 import {Context} from "./ContextAPI";
 function BottomNav() {
-    const [toggle, toggler] = useContext(Context)
+    const [toggle] = useContext(Context)
     return (
         <div className="bottomNav" style={{backgroundColor : toggle ? "white" : "black"}}>
             <NavLink exact={true} to="/" activeClassName="active"><HomeIcon className="icons" /></NavLink>

@@ -9,9 +9,12 @@ import Skills from "./component/Skills";
 import { ContextProvider } from "./component/ContextAPI";
 
 function App() {
+    if(localStorage.getItem("dark-toggler") == null) {
+        localStorage.setItem("dark-toggler", false);
+        console.log(`value in locaStorage = ${localStorage.getItem("dark-toggler")}`)
+    }
     return (
         <div>
-
             <Router>
                 <ContextProvider>
                     <Switch>

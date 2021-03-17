@@ -2,11 +2,16 @@ import React,{useContext} from 'react';
 import "./Info.css";
 import Avatar from "@material-ui/core/Avatar";
 import {Context} from "./ContextAPI";
+import {lightTheme, darkTheme} from "../colors/colors";
 
 function Info() {
     const [toggle] = useContext(Context)
+    const pageTheme = {
+        backgroundColor: toggle ? darkTheme.backgroundColor : lightTheme.backgroundColor,
+        color: toggle ? darkTheme.textColor : lightTheme.textColor
+    }
     return (
-        <div className="info" style={{backgroundColor : toggle ? "black" : "white",color : toggle ? "white" : "black"}}>
+        <div className="info" style={pageTheme}>
             <div className="name">
                 <p>Enter Your Name</p>
             </div>

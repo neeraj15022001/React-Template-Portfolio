@@ -4,13 +4,18 @@ import Rating from '@material-ui/lab/Rating';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import {Context} from "./ContextAPI";
+import {lightTheme, darkTheme} from "../colors/colors";
 
 function SkillCard() {
     const [value, setValue] = React.useState(2);
     const [toggle] = useContext(Context);
+    const skillCardColor = {
+        backgroundColor : toggle ? darkTheme.cardsColor : lightTheme.cardsColor,
+        color : toggle ? darkTheme.textColor : lightTheme.textColor
+    }
     return (
         <div className="skillCard">
-            <div className="skill" style={{backgroundColor : toggle ? "white" : "black",color : toggle ? "black" : "white"}}>
+            <div className="skill" style={skillCardColor}>
                 <div className="iconPlaceholder">
 
                 </div>

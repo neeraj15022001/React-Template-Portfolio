@@ -3,8 +3,8 @@ import "./Home.css";
 import ProjectCard from "./ProjectCard";
 import { Context } from "./ContextAPI";
 import {lightTheme, darkTheme} from "../colors/colors";
-import schoolLogo from "../assets/school.png";
-import universityLogo from "../assets/university.png";
+import schoolLogo from "../assets/school.jpeg";
+import universityLogo from "../assets/university.jpeg";
 
 function Home() {
   const [toggle] = useContext(Context);
@@ -29,7 +29,7 @@ function Home() {
             src={schoolLogo}
             alt="school"
           />
-          <h6>Lord Rama School</h6>
+          <h6>Your School</h6>
         </div>
 
         <div
@@ -43,7 +43,7 @@ function Home() {
             src={universityLogo}
             alt="University"
           />
-          <h6>Chitkara University</h6>
+          <h6>Your University</h6>
         </div>
       </div>
 
